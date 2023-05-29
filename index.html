@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <!-- FONT Casroto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <!-- FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.js">
+    <title></title>
+</head>
+
+<body>
+    <div id="shop">
+        <!-- NOI DUNG -->
+        <div class="main">
+            <!-- HEADER  -->
+            <div class="header">
+                <div class="left">
+                    <h2>If you like it, </h2>
+                    <h3>wear it</h3>
+                </div>
+
+                <div class="logo">
+                    <a href="./page1.html"><img src="./img/logo.png" alt=""></a>
+                </div>
+
+
+                <div class="right">
+                    <div class="search_items">
+                        <input type="text">
+                    </div>
+                    <div id="icon_cart">
+                        <a>
+                            <i class="fa-solid fa-cart-shopping">
+                                <span class="cart-count">0</span>
+                            </i>
+                        </a>
+                        <!-- SHOW GIO HANG  -->
+                        <div class="showGioHang" style="display: none;">
+                            <p>Tên sản phẩm: <span class="tenSP"></span></p>
+                            <p> Giá sản phẩm: <span class="giaSP"></span></p>
+                            <div class="sum">
+                                <hr>
+                                <p> Tổng số lượng: <span class="soLuongSP"></span></p>
+                                <p> Tổng tiền: <span class="sum_tien"></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon_login">
+                        <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- NOI DUNG   -->
+            <div class="container">
+                <div class="list-item">
+                    <div class="brand marginTop_30 " id="levents">
+                        <h2>TEE</h2>
+                    </div>
+                    <div class="col-item">
+                        <div class="item row-4">
+                            <img src="./img/tee1.jpg" alt="">
+                            <a href="./detail_items.html">
+                                <div class="list-item-text">
+                                    <h4 class="name_item">Miss out Tee 1</h4>
+                                    <p class="price">340.000VND</p>
+                                </div>
+                            </a>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/tee2.jpg" alt="">
+                            <a href="./detail_items.html">
+                                <div class="list-item-text">
+                                    <h4 class="name_item">Levents Tee 1</h4>
+                                    <p class="price">340.000VND</p>
+                                </div>
+                            </a>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/tee3.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">LEVENTS TEE HEART </h4>
+                                <p class="price">340.000vnđ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/tee4.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Lider Pepper Salt </h4>
+                                <p class="price">340.000vnđ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                    </div>
+
+                    <h2>SWEATER</h2>
+                    <div class="col-item">
+                        <div class="item row-4" id="open">
+                            <a><img src="./img/sweater1.jpg" alt=""></a>
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/sweater2.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+
+
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/sweater3.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/sweater4.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                    </div>
+
+                    <h2>HOODIE</h2>
+                    <div class="col-item">
+                        <div class="item row-4">
+                            <img src="./img/hoodie1.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/hoodie2.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/hoodie3.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/hoodie4.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+
+                    </div>
+
+                    <h2>PANTS</h2>
+                    <div class="col-item">
+                        <div class="item row-4">
+                            <img src="./img/quan1.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/quan2.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/quan3.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+                        <div class="item row-4">
+                            <img src="./img/quan4.jpg" alt="">
+                            <div class="list-item-text">
+                                <h4 class="name_item">Miss out Tee 1</h4>
+                                <p class="price">340.000đ</p>
+                            </div>
+                            <button class="btnbuy">Mua ngay</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+
+            <div id="footer">
+                <div class="gioithieu row_3">
+                    <p class="tittle">Giới thiệu</p>
+                    <div class="text">
+                        <p> HỘ KINH DOANH Red Label</p>
+                        <p>Trụ sở hộ kinh doanh: 842 Sư Vạn Hạnh,Tp. Hồ Chí Minh</p>
+                        <p>Mä só thuế: ********</p>
+                        <p>Ngày cấp: dd/mm/yyyy</p>
+                    </div>
+                </div>
+
+                <div class="contact row_3">
+                    <p class="tittle">Thông tin liên hệ</p>
+                    <p>Địa chỉ: <span>Lê Trọng Tấn</span> </p>
+                    <p>Điện thoại: <span>0779641623</span> </p>
+                    <p>Email: <span>hoangbaotruc19@gmail.com</span> </p>
+                </div>
+
+                <div class="maps row_3">
+                    <p class="tittle">Bản đồ</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1544.0959550658893!2d106.62887278686676!3d10.805747255919252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUaOG7sWMgcGjhuqltIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1684144980176!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        let gioHang = [];
+
+        //NUT MUA NGAY
+        let btnMuaNgayList = document.querySelectorAll(".btnbuy");
+        btnMuaNgayList.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+
+                let tenSP = document.querySelector(".name_item");
+
+                // LAY TEN SP DUNG ????  
+                // let danhSachSP  = document.querySelectorAll(".name_item");
+                // danhSachSP .forEach(function (item) {
+                //     item.addEventListener("click", function () {
+                //         let tenSP = danhSachSP.innerHTML;
+                //         console.log(tenSP);
+                //     });
+                // });
+
+                //Lay gia sp
+                let giaSP = document.querySelector(".price");
+
+                gioHang.push({
+                    // tenSP: tenSP.innerHTML,
+                    // giaSP: giaSP.innerHTML,
+                });
+
+                //CAP NHAP SO LUONG TRONG GIO HANG
+                let soLuongSP = gioHang.length;
+
+                //Hien so luong gio hang
+                let iconGioHang = document.querySelector('.cart-count');
+                iconGioHang.innerText = soLuongSP;
+
+                // THAY DOI TEN SP...TRONG GIO HANG 
+                let thayTenSPList = document.querySelectorAll('.tenSP');
+                thayTenSPList.forEach(elem => {
+                    elem.innerText = tenSP.innerHTML;
+                });
+
+                let thayGiaSP = document.querySelector('.giaSP');
+                thayGiaSP.innerText = giaSP.innerHTML;
+                let thaysoLuongSP = document.querySelector('.soLuongSP');
+                thaysoLuongSP.innerText = gioHang.length;
+
+
+
+
+                // TINH TONG TIEN ???? 
+
+                let sum_tien = gioHang.length;
+
+                let tongTien = document.querySelector('.sum_tien');
+                tongTien.innerText = sum_tien;
+
+            });
+        });
+
+        //SHOW gio hang
+        let icon_cart = document.getElementById('icon_cart');
+        let showGioHang = document.querySelector('.showGioHang');
+        icon_cart.addEventListener('click', () => {
+            if (showGioHang.style.display == 'none') {
+                showGioHang.style.display = 'block';
+            }
+            else {
+                showGioHang.style.display = 'none';
+            }
+        })
+
+    </script>
+</body>
+
+</html>

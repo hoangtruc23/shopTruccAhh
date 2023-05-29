@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./login.css">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- ICONS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- HEADER  -->
+        <div class="header">
+            <div class="left">
+                <h2>If you like it, </h2>
+                <h3>wear it</h3>
+            </div>
+            <div class="logo">
+                <a href="./page1.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li id="paymentForm"><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li id="loginForm"><i class="fa-regular fa-user"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="login" style="display: block;">
+            <div class="form">
+                <div class="dieuhuong">
+                    <ul>
+                        <li> <a href="./page1.html">Home</a></li>
+                        <li><a href="./detail_items.html">Items</a></li>
+                    </ul>
+                </div>
+                <div class="form_login">
+                    <!-- DANG NHAP -->
+
+                    <p class="tittle">Login</p>
+                    <div class="email">
+                        <input type="text" placeholder="email">
+                    </div>
+
+                    <div class="password">
+                        <!-- <label for="">Password</label> -->
+                        <input type="text" placeholder="password">
+                    </div>
+                    <div class="check">
+                        <div class="remember">
+                            <input type="checkbox" placeholder="">Remember Me
+                        </div>
+                        <div class="forget_password">
+                            <a href="#">Forget password?</a>
+                        </div>
+                    </div>
+                    <div class="btn_login btn-click">
+                        <button>Sign up</button>
+                    </div>
+                </div>
+
+                <!-- DANG KY -->
+                <div class="form_signup">
+                    <p class="tittle">Create Account</p>
+                    <div class="username">
+                        <input type="text" placeholder="full name">
+                    </div>
+                    <div class="phonenumber">
+                        <input type="number" placeholder="your phone number">
+                    </div>
+                    <div class="email">
+                        <input type="text" placeholder="email">
+                    </div>
+                    <div class="password">
+                        <!-- <label for="">Password</label> -->
+                        <input type="text" placeholder="password">
+                    </div>
+                    <div class="btn_signup btn-click">
+                        <button>Create an account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- THONG TIN MUA HANG  -->
+        <div class="purchase">
+            <div class="purchase-block" style="display: none;">
+                <div class="purchase_Box" >
+                    <form name="purchaseInfor" action="">
+                        <h3>Xin nhập thông tin mua hàng: </h3>
+                        <div class="purchase_typing fullName">
+                            <label for="">Họ & Tên: </label>
+                            <input id="ip_TenKH" type="text" placeholder="">
+                        </div>
+                        <div class="purchase_typing phoneNumber">
+                            <label for="">Số điện thoại: </label>
+                            <input id="ip_SDT" type="text" placeholder="">
+                        </div>
+                        <div class="purchase_typing addRess">
+                            <label for="">Địa chỉ: </label>
+                            <input id="ip_DiaChi" type="text" placeholder="">
+                        </div>
+                        <div class="purchase_typing addRess">
+                            <label for="">Ghi chú: </label>
+                            <input id="ip_GhiChu" type="text" placeholder="">
+                        </div>
+                        <div class="purchase_typing btn_submit">
+                            <input id="btn_submit_info" type="button" onclick="xuatTT()" value="Gửi thông tin">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- XUAT THONG TIN  -->
+            <div id="purchase_Two" style="display: none;">
+                <div class="purchase-block">
+                    <div class="purchaseCheck">
+                        <h2>Kiểm tra lại thông tin: </h2>
+                        <div class="text_purchaseCheck">
+                            <p>Họ Tên: <span id="TenKH"></span></p>
+                            <p>Số điện thoại: <span id="SDTKH"></span></p>
+                            <p>Địa chỉ: <span id="DCKH"></span></p>
+                            <p>Tổng hóa đơn: <span></span></p>
+                            <button id="btn_done_form">Xác nhận</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thanksPurchase" style="display: none;">
+            <h4 class="btn-shine">Cảm ơn bạn đã tin tưởng mua hàng của chúng mình nhé</h4>
+           
+        </div>
+
+        <!-- FOOTER  -->
+        <div id="footer">
+            <div class="gioithieu row_3">
+                <p class="tittle">Giới thiệu</p>
+                <div class="text">
+                    <p> HỘ KINH DOANH Red Label</p>
+                    <p>Trụ sở hộ kinh doanh: 842 Sư Vạn Hạnh,Tp. Hồ Chí Minh</p>
+                    <p>Mä só thuế: ********</p>
+                    <p>Ngày cấp: dd/mm/yyyy</p>
+                </div>
+            </div>
+
+            <div class="contact row_3">
+                <p class="tittle">Thông tin liên hệ</p>
+                <p>Địa chỉ: <span>Lê Trọng Tấn</span> </p>
+                <p>Điện thoại: <span>0779641623</span> </p>
+                <p>Email: <span>hoangbaotruc19@gmail.com</span> </p>
+            </div>
+
+            <div class="maps row_3">
+                <p class="tittle">Bản đồ</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1544.0959550658893!2d106.62887278686676!3d10.805747255919252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUaOG7sWMgcGjhuqltIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1684144980176!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+
+</html>

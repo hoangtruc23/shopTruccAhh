@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font Nowy  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- font Roboto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./page1.css">
+    <title>TruccAhh Shop</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navBar">
+            <h1 id="shop">TruccAhh<i class="fa-regular fa-registered"></i> Shop</h1>
+            <div class="navMenu">
+                <ul>
+                    <li><a href="./index.html " target="_blank">Items <i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <a href="">
+                                <li>tee</li>
+                            </a>
+                            <a href="">
+                                <li>sweater</li>
+                            </a>
+                            <a href="">
+                                <li>hoodie</li>
+                            </a>
+                            <a href="">
+                                <li>pants</li>
+                            </a>
+
+                        </ul>
+                    </li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- BANNER  -->
+        <div class="banner">
+            <a href="./index.html"><img src="./img/banner.jpg" alt=""></a>
+
+        </div>
+
+        <!-- COUNTDOWM -->
+        <div id="countDown">
+            <div class="cD_img">
+                <img src="./img/sale1.png" alt="">
+            </div>
+            <div class="cD_content">
+                <h2>Chương trình khuyến mãi chỉ còn trong: </h2>
+                <div id="timeCountDown">
+                    <div class="cD_box days_box">
+                        <p class="days"></p>
+                        <p>Day</p>
+                    </div>
+                    <div class="cD_box hours_box">
+                        <p class="hours"></p>
+                        <p>Hour</p>
+                    </div>
+                    <div class="cD_box minutes_box">
+                        <p class="minutes"></p>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="cD_box seconds_box">
+                        <p class="seconds"></p>
+                        <p>Seconds</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- THONG TIN  -->
+        <div id="aboutMe">
+            <p class="tittle">About Me</p>
+            <div class="about_content">
+                <table>
+                    <td class="left">
+                        <div class="aboutMe_left">
+                            <img src="./img/aboutMe.jpg" alt="">
+                        </div>
+                    </td>
+                    <td class="right">
+                        <div class="aboutMe_right">
+                            <div class="aM_menu">
+                                <ul class="aM_listMenu">
+                                    <li id="mn_GioiThieu">Introduce</li>
+                                    <li id="mn_DuAn">Project</li>
+                                    <li id="mn_ChucNang">Function</li>
+                                </ul>
+                            </div>
+                            <div id="text_GioiThieu" class="text_box" style="display:block;">
+                                <h2>Hi! My name TruccAhh</h2>
+                                <p>Sophomore - Faculty of Infomation Technology - HUFI </p>
+                                <hr>
+                                <br>
+                                <p>Cảm ơn mọi người đã ghé thăm website bán hàng nho nhỏ của mình.
+                                    Đây là website shop thời trang mình đã đặt rất nhiều tâm huyết.
+                                    Hy vọng mọi người sẽ yêu thích sản phẩm của mình.</p>
+                                <br>
+                                <i> Have a nice dayyy! <i class="fa-regular fa-heart"></i> <i
+                                        class="fa-regular fa-face-kiss-wink-heart"></i></i>
+                            </div>
+                            <div id="text_DuAn" class="text_box" style="display:none;">
+                                <p>Sau khi tìm hiểu thì mình mang đến một thiết kế web bán hàng cho shop mang tên
+                                    TruccAhh.
+                                </p>
+                                <br>
+                                <p> TrucccAhhShop là một dự án thú vị và đầy thử thách. Trong dự án này, tôi sẽ tập
+                                    trung vào việc thiết kế một trang website bán hàng đơn giản nhưng vẫn chuyên nghiệp
+                                    và hấp dẫn để tạo ra trải nghiệm mua sắm tốt nhất cho khách hàng.
+                                </p>
+                                <br>
+                                <p>Dự án này chủ yếu được thực hiện bởi HTML, CSS, JS và Bootrap,...</p>
+                            </div>
+                            <div id="text_ChucNang" class="text_box" style="display:none;">
+                                <p>Trong này thì sẽ có các chức năng cơ bản của một website bán hàng: </p>
+                                <ol>
+                                    <li>Hiện danh sách sản phẩm</li>
+                                    <li>Đăng ký/ Đăng nhập</li>
+                                    <li>Thanh toán</li>
+                                    <li>Nhập thông tin và xuất lại thông tin</li>
+                                    <li>More....</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </td>
+                </table>
+            </div>
+        </div>
+        <!-- LIEN HE -->
+        <div id="footer">
+            <div class="gioithieu row_3">
+                <p class="tittle">Giới thiệu</p>
+                <div class="text">
+                    <p> HỘ KINH DOANH Red Label</p>
+                    <p>Trụ sở hộ kinh doanh: 842 Sư Vạn Hạnh,Tp. Hồ Chí Minh</p>
+                    <p>Mä só thuế: ********</p>
+                    <p>Ngày cấp: dd/mm/yyyy</p>
+                </div>
+            </div>
+
+            <div class="contact row_3">
+                <p class="tittle">Thông tin liên hệ</p>
+                <p>Địa chỉ: <span>Lê Trọng Tấn</span> </p>
+                <p>Điện thoại: <span>0779641623</span> </p>
+                <p>Email: <span>hoangbaotruc19@gmail.com</span> </p>
+            </div>
+
+            <div class="maps row_3">
+                <p class="tittle">Bản đồ</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1544.0959550658893!2d106.62887278686676!3d10.805747255919252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUaOG7sWMgcGjhuqltIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1684144980176!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </div>
+    <script src="./page1.js"></script>
+</body>
+
+</html>

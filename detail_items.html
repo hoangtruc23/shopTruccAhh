@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT Castoro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- LINK ICONS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./detail_item.css">
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <title>TrucccAhhShop</title>
+</head>
+
+<body>
+
+    <!-- <div class="header">
+        <div class="left">
+            <h2>If you like it, </h2>
+            <h3>wear it</h3>
+        </div>
+
+        <div class="logo">
+            <a href="./page1.html"><img src="./img/logo.png" alt=""></a>
+        </div>
+        <div class="right">
+            <div class="search_items">
+                <input type="text">
+            </div>
+            <a href="./login.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </div> -->
+    <div class="header">
+        <div class="left">
+            <h2>If you like it, </h2>
+            <h3>wear it</h3>
+        </div>
+
+        <div class="logo">
+            <a href="./page1.html"><img src="./img/logo.png" alt=""></a>
+        </div>
+
+
+        <div class="right">
+            <div class="search_items">
+                <input type="text">
+            </div>
+            <div id="icon_cart">
+                <a>
+                    <i class="fa-solid fa-cart-shopping">
+
+                    </i>
+                </a>
+                <!-- SHOW GIO HANG  -->
+                <div class="showGioHang" style="display: none;">
+                    <p>Tên sản phẩm: <span class="tenSP"></span></p>
+                    <p> Giá sản phẩm: <span class="giaSP"></span></p>
+                    <div class="sum">
+                        <hr>
+                        <p> Tổng số lượng: <span class="soLuongSP"></span></p>
+                        <p> Tổng tiền: <span class="sum_tien"></span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="icon_login">
+                <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="img_item">
+            <table>
+                <tr>
+                    <img style="width: 450px; height: 450px;margin-left:80px ;" src="./img/missout1_1.jpg" alt="">
+                </tr>
+                <tr class="img_list_items">
+                    <td><img src="./img/missout1.jpg" alt=""></td>
+                    <td><img src="./img/missout1_2.jpg" alt=""></td>
+                </tr>
+            </table>
+        </div>
+        <div class="info_items">
+            <table class="marginT_50">
+                <tr>
+                    <div class="info_item">
+                        <h2 class="text-up">Miss out Tee 1</h2>
+                        <p class="price"> 240,000 vnđ </p>
+                        <p class="color-select">Màu sắc:
+                            <!-- <select name="color" id="">
+                                <div class="">
+                                    <option value="">Trắng</option>
+                                </div>
+                                <div class="">
+                                    <option value="">Đen</option>
+                                </div>
+                                <div class="">
+                                    <option value="">Hồng</option>
+                                </div>
+                            </select> -->
+                            <input type="radio" name="my-radio-button" id="option-1" value="option-1">
+                            <label class="cl_black" for="option-1"></label>
+                            <input type="radio" name="my-radio-button" id="option-2" value="option-2">
+                            <label class="cl_pink" for="option-2"></label>
+                            <input type="radio" name="my-radio-button" id="option-3" value="option-3">
+                            <label class="cl_gray" for="option-3"></label>
+
+
+
+                        </p>
+                        <p class="amount">Số lượng: <input type="number" name="" id=""></p>
+                        <p class="favourite">Lưu sản phẩm:
+                            <i class="fa-regular fa-heart"></i>
+                        </p>
+
+                    </div>
+
+                    <!-- MÔ TẢ SẢN PHẨM -->
+                    <div class="desc_items">
+                        <p class="desc_item_more">Mô tả sản phẩm</p>
+                        <div class="text_desc" style="display:none;">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur aliquam sit
+                            reprehenderit consequuntur odit nemo debitis, molestiae est minima fugiat odio officiis
+                            nihil facere quasi ipsa laborum aut sint non. Laborum non ut sequi voluptatum praesentium!
+                            Reprehenderit sapiente, beatae ipsum explicabo dignissimos at adipisci nostrum suscipit
+                            dolor quo totam ullam?
+                        </div>
+                    </div>
+                    <div class="desc_items">
+                        <p class="choosesize_items">Bảng Size</p>
+                        <div class="text_chooseSize" style="display:none;">
+                            <br>
+                            <ul> Sản phẩm được may theo thông số tiêu chuẩn tương đối của người
+                                Việt Nam. Nếu bạn đang
+                                cân
+                                nhắc giữa hai kích cỡ, nên chọn kích cỡ lớn hơn.
+                                <li>
+                                    Kích cỡ 1: Chiều cao từ 1m50 – 1m65, cân nặng trên 55kg
+                                </li>
+                                <li>
+                                    Kích cỡ 2: Chiều cao từ 1m65 – 1m72, cân nặng dưới 65kg
+                                </li>
+                                <li>
+                                    Kích cỡ 3: Chiều cao từ 1m70 – 1m77, cân nặng dưới 80kg
+                                </li>
+                                <li>
+                                    Kích cỡ 4: Chiều cao trên 1m72, cân nặng dưới 95kg.
+                            </ul>
+                            </li>
+                        </div>
+                    </div>
+                </tr>
+
+
+                <!-- NUT MUA HANG -->
+                <tr>
+                    <td>
+                        <div class="btn btn_add">
+                            <button>Thêm vào giỏ hàng</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn btn_buy marginL_50">
+                            <button>Mua ngay</button>
+                        </div>
+                    </td>
+                </tr>
+                <br>
+            </table>
+        </div>
+    </div>
+    <div class="more_items">
+        <h3>Sản phẩm khác</h3>
+        <hr>
+        <div class="image-slider">
+            <div class="slider-container">
+                <img src="./img/tee2.jpg" alt="Image 1">
+                <img src="./img/tee3.jpg" alt="Image 2">
+                <img src="./img/tee4.jpg" alt="Image 3">
+                <img src="./img/sweater1.jpg" alt="Image 1">
+                <img src="./img/hoodie4.jpg" alt="Image 2">
+                <img src="./img/hoodie3.jpg" alt="Image 3">
+            </div>
+            <button class="left-arrow"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button class="right-arrow"><i class="fa-solid fa-arrow-right-long"></i></button>
+
+            <!-- <ul class="pager">
+                <li class="previous left-arrow"><i class="fa-solid fa-arrow-left-long"></i></li>
+                <li class="next right-arrow"><i class="fa-solid fa-arrow-right-long"></i></li>
+            </ul> -->
+        </div>
+
+    </div>
+
+    <!-- FOOTER  -->
+
+
+    <div id="footer">
+        <div class="gioithieu row_3">
+            <p class="tittle">Giới thiệu</p>
+            <div class="text">
+                <p> HỘ KINH DOANH Red Label</p>
+                <p>Trụ sở hộ kinh doanh: 842 Sư Vạn Hạnh,Tp. Hồ Chí Minh</p>
+                <p>Mä só thuế: ********</p>
+                <p>Ngày cấp: dd/mm/yyyy</p>
+            </div>
+        </div>
+
+        <div class="contact row_3">
+            <p class="tittle">Thông tin liên hệ</p>
+            <p>Địa chỉ: <span>Lê Trọng Tấn</span> </p>
+            <p>Điện thoại: <span>0779641623</span> </p>
+            <p>Email: <span>hoangbaotruc19@gmail.com</span> </p>
+        </div>
+
+        <div class="maps row_3">
+            <p class="tittle">Bản đồ</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1544.0959550658893!2d106.62887278686676!3d10.805747255919252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUaOG7sWMgcGjhuqltIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1684144980176!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- JS  -->
+
+    <script>
+        // MORE DESC 
+        let more_desc = document.querySelector('.desc_item_more');
+        let text_desc = document.querySelector('.text_desc');
+        more_desc.addEventListener('click', () => {
+            if (text_desc.style.display == 'none') {
+                text_desc.style.display = 'block';
+            }
+            else {
+                text_desc.style.display = 'none';
+            }
+
+        }
+        )
+
+        let more_chooseSize = document.querySelector('.choosesize_items');
+        let text_chooseSize = document.querySelector('.text_chooseSize');
+        more_chooseSize.addEventListener('click', () => {
+            if (text_chooseSize.style.display == 'none') {
+                text_chooseSize.style.display = 'block';
+            }
+            else {
+                text_chooseSize.style.display = 'none';
+            }
+
+        }
+        )
+        // SLIDE SHOW 
+        const sliderContainer = document.querySelector('.slider-container');
+        const sliderImages = document.querySelectorAll('.slider-container img');
+        const prevBtn = document.querySelector('.left-arrow');
+        const nextBtn = document.querySelector('.right-arrow');
+
+        let counter = 0;
+        const size = sliderImages[0].clientWidth;
+
+
+        sliderContainer.style.transform =
+            'translateX(' + (-size * counter) + 'px)';
+
+        nextBtn.addEventListener('click', () => {
+            if (counter >= sliderImages.length - 1) return;
+            sliderContainer.style.transition =
+                "transform 0.5s ease-in-out";
+            counter++;
+            sliderContainer.style.transform =
+                'translateX(' + (-size * counter) + 'px)';
+
+
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (counter <= 0) return;
+            sliderContainer.style.transition = "transform 0.5s ease-in-out";
+            counter--;
+            sliderContainer.style.transform =
+                'translateX(' + (-size * counter) + 'px)';
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
